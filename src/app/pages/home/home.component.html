@@ -1,0 +1,126 @@
+
+
+
+<ion-content>
+
+  <ion-button shape="round" fill="outline"  [routerLink]="['/opciones']" class="bt2" color="warning">
+    <ion-icon name="return-up-back-sharp" slot="start"> </ion-icon>
+  </ion-button>
+
+<ion-grid fixed>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="auto">
+      
+       <ion-button (click)="selectmarca()" size= "medium"  color="light" expand="block" fill="outline" [routerLink]="['/listadoinvitado']" class="boton">MARCA </ion-button>
+           
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid fixed>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="auto">
+
+      <ion-button (click)="selectmodelo()" size= "medium"  color="light" expand="block" fill="outline" [routerLink]="['/listadoinvitado']" class="boton">MODELO </ion-button>
+    </ion-col>
+
+    
+  </ion-row>
+</ion-grid>
+      
+
+
+
+<ion-grid>
+       <ion-row class="ion-justify-content-center">
+        <ion-col  sizeXs="10"  sizeLg="4" class="redes" class="ion-text-center">
+
+  <ion-button (click)="addNuevoEnable()" expand="full" color="light" class="maquina">
+    <ion-label>Crear nueva Maquina</ion-label>
+    <ion-icon slot="end" name="person-add-sharp"></ion-icon>
+  </ion-button>
+
+  <div *ngIf="addNuevo == true">
+    <ion-item>
+      <ion-label>Marca</ion-label>
+      <ion-input [(ngModel)]="newMaquina.marca"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Modelo</ion-label>
+      <ion-input [(ngModel)]="newMaquina.modelo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Seccion</ion-label>
+      <ion-input type="string" [(ngModel)]="newMaquina.seccion"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>Codigo</ion-label>
+      <ion-input  [(ngModel)]="newMaquina.codigo"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="cancelar()" color="danger">
+      Cancelar
+    </ion-button>
+
+    <ion-button (click)="guardar()">
+     Guardar
+    </ion-button>
+  </div>
+   
+
+
+
+  
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Maquina</ion-label>
+    </ion-list-header>
+
+    <div *ngFor="let maquina of maquina; let i = index">
+      <ion-item *ngIf="maquina.marca == marca">
+        <ion-label>{{i}}.-Maquina: {{maquina.marca}}
+          <p>Modelo: {{maquina.modelo}}</p>
+          <p>Seccion: {{maquina.seccion}}</p>
+          <p>Codigo: {{maquina.codigo}}</p>
+        </ion-label>
+        <ion-buttons slot="end">
+          <ion-button (click)="editar(maquina)">
+            <ion-icon slot="icon-only" name="create"></ion-icon>
+          </ion-button>
+          <ion-button (click)="eliminar(i)">
+            <ion-icon slot="icon-only"color="danger" name="trash-bin"></ion-icon>
+          </ion-button>
+
+                    <ion-button (click)="eliminar(i)" [routerLink]="['/mantenimientos']">
+                      <ion-icon name="build-sharp" color="success" ></ion-icon>
+          </ion-button>
+
+        </ion-buttons>
+      </ion-item>
+    </div>
+
+    
+  
+
+  </ion-list>
+</ion-col>
+</ion-row>
+</ion-grid> 
+  
+ 
+    
+   
+
+
+</ion-content>
+
+
+
+
+
+

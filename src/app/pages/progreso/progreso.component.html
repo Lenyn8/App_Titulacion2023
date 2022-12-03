@@ -1,0 +1,44 @@
+<ion-content padding>
+
+  <ion-button shape="round" fill="outline"  [routerLink]="['/invitado']" class="bt2" color="warning">
+    <ion-icon name="return-up-back-sharp" slot="start"> </ion-icon>
+  </ion-button>
+  
+  <ion-card>
+
+    <img src="https://www.homag.com/fileadmin/product/paneldividing/machines/panelsaw-SAWTEQ-B-500.jpg"/>
+    
+<ion-card-content>
+  <ion-card-title>
+    <h2>
+
+SECCIONADORA HOMAG HPP-250
+    </h2>
+</ion-card-title>
+<ion-list>
+  <ion-item>
+  <ion-progress-bar color="primary" value="0.8"></ion-progress-bar>
+</ion-item>
+</ion-list>
+</ion-card-content>    
+</ion-card>
+
+
+<ion-item button >
+  Buscar maquina
+  <ion-icon name="search-outline"slot="start"></ion-icon>
+</ion-item>
+
+
+<ion-item button [routerLink]="['/listadoinvitado']">
+  Tiempo de trabajo
+  <ion-icon name="alarm-outline" slot="start"></ion-icon>
+</ion-item>
+
+<ion-item button>
+  Mantenimientos
+  <ion-icon name="bar-chart-outline" slot="start"></ion-icon>
+</ion-item>
+
+
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-content>
+  <ion-button shape="round" fill="outline"  [routerLink]="['/listadoinvitado']" class="bt2" color="warning">
+    <ion-icon name="return-up-back-sharp" slot="start"> </ion-icon>
+  </ion-button>
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+     <ion-col  sizeXs="10"  sizeLg="4" class="redes" class="ion-text-center"> 
+       <ion-button class="lub" size="default" expand="block" color="dark"> Ejecutado <ion-icon name="color-fill-outline" slot = "start"></ion-icon> </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>    
+
+  <ion-grid >
+    <ion-row class="ion-justify-content-center" >
+      <ion-button color="secundary">
+        <ion-col ></ion-col>
+        
+        
+        <ion-col >
+          <div >
+            0{{tiempo.minutos}}
+           </div>
+         </ion-col>
+         
+         <ion-col >
+           <div *ngIf="tiempo.segundos <10">
+             0{{tiempo.segundos}}
+           </div>
+           
+           <div *ngIf="tiempo.segundos >=10">
+    {{tiempo.segundos}}
+   </div>
+   
+ </ion-col>
+ 
+</ion-button>
+</ion-row>
+</ion-grid>
+
+<ion-item>
+  <ion-progress-bar color="primary" value="0.6"></ion-progress-bar>
+</ion-item>
+
+
+<ion-label color="warning">Inicio</ion-label>
+<ion-label color="danger" class="estado">Completo</ion-label>
+
+</ion-content>

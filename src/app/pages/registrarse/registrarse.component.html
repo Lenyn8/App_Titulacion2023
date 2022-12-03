@@ -1,0 +1,52 @@
+<ion-content>
+  
+
+  <ion-button expand="block" [routerLink]="['/']" class="bt2" color="tertiary">
+    <ion-icon name="home-sharp"></ion-icon>
+  </ion-button>
+
+  <img src="assets/img/logo-registrarse.png"/>
+
+    <ion-content>
+
+      <ion-item>
+          <ion-label position="stacked">Correo</ion-label>
+          <ion-input [(ngModel)]="newUser.correo"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label position="stacked">Nombre</ion-label>
+        <ion-input [(ngModel)]="newUser.nombre"></ion-input>
+    </ion-item>
+    
+    
+    <ion-item>
+      <ion-label position="stacked">Telefono</ion-label>
+      <ion-input [(ngModel)]="newUser.telefono"></ion-input>
+    </ion-item>
+    
+    
+      <ion-item>
+          <ion-label position="stacked">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="newUser.password"></ion-input>
+      </ion-item>
+    
+      
+      <ion-item>
+        <ion-label position="stacked">Repite Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="repassword"></ion-input>
+    </ion-item>
+    
+      <ion-button (click)="registrarse()" expand="block"  shape="round" >
+        Registrarse
+      </ion-button>
+    
+      <ion-item>
+          <ion-label>¿Ya tienes un usuario?</ion-label>
+          <ion-buttons slot="end">
+              <ion-button [routerLink]="['/login']" >
+              Ingresar
+              </ion-button>
+          </ion-buttons>
+      </ion-item>
+</ion-content>

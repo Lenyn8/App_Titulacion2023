@@ -1,0 +1,218 @@
+
+
+<ion-content>
+  <ion-button shape="round" fill="outline"  [routerLink]="['/listadoinvitado']" class="bt2" color="warning">
+    <ion-icon name="return-up-back-sharp" slot="start"> </ion-icon>
+ </ion-button>
+
+ <ion-grid>
+  <ion-row class="ion-justify-content-center">
+   <ion-col  sizeXs="10"  sizeLg="4" class="redes" class="ion-text-center"> 
+     <ion-button class="lub" size="default" expand="block" color="dark"> Ejecutado <ion-icon name="color-fill-outline" slot = "start"></ion-icon> </ion-button>
+  </ion-col>
+</ion-row>
+</ion-grid>    
+
+<ion-grid >
+  <ion-row  >
+    <ion-button size= "medium"  color="dark" expand="block" fill="solid"> <ion-label>Tiempo de trabajo: </ion-label>
+      <ion-col > </ion-col>
+       <ion-col >
+         <div >0{{tiempo.minutos}}</div>
+       </ion-col>
+       <ion-label>:</ion-label>
+       
+      <ion-col >
+         <div *ngIf="tiempo.segundos <10"> 0{{tiempo.segundos}}</div> 
+         <div *ngIf="tiempo.segundos >=10">{{tiempo.segundos}}</div>
+      </ion-col>
+      <ion-label>Horas</ion-label>
+   </ion-button>
+  </ion-row>
+</ion-grid>
+      
+      
+      <ion-grid>
+        <ion-row class="ion-justify-content-start">
+        <ion-col  sizeXs="10"  sizeLg="4"  class="ion-text-start">  
+         <ion-label color="warning">Inicio</ion-label>
+        </ion-col>
+       </ion-row>
+      </ion-grid>
+      
+      
+      
+      <ion-grid>
+        <ion-row class="ion-justify-content-center">
+         <ion-col  sizeXs="10"  sizeLg="4"  class="ion-text-center">
+           
+             <ion-label size= "medium"  color="light" expand="block" fill="outline"> PLANOS DE UBICACION</ion-label>
+           
+         </ion-col>
+        </ion-row>
+      </ion-grid>     
+      
+      <ion-grid>
+        <ion-row class="ion-justify-content-center">
+         <ion-card>
+          <img src="https://i.pinimg.com/564x/77/ba/07/77ba073147f531a67497ca562c49b241.jpg" class="neumatico">   
+              <ion-card-title>
+                <ion-card-content>
+                   SISTEMA DE ELEVACION Y EJES
+                </ion-card-content>
+              </ion-card-title>
+        </ion-card>
+       </ion-row>
+      </ion-grid> 
+      
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+           <ion-col  sizeXs="11"  sizeLg="4" class="redes" class="ion-text-center">
+              <ion-item>
+              <ion-checkbox  slot="start" checked></ion-checkbox>
+              <ion-label >REVICION DEL LOS SISTEMAS NEUMATICOS (Punto 1)</ion-label>
+              </ion-item>
+      
+              <ion-grid >
+                <ion-row  >
+                  <ion-button size= "medium"  color="dark" expand="block" fill="solid"> <ion-label>Tiempo de trabajo: </ion-label>
+                    <ion-col > </ion-col>
+                     <ion-col >
+                    <div >0{{tiempo.minutos}}</div>
+                  </ion-col>
+               <ion-label>:</ion-label>
+                     
+              <ion-col >
+                <div *ngIf="tiempo.segundos <10"> 0{{tiempo.segundos}}</div> 
+                  <div *ngIf="tiempo.segundos >=10">{{tiempo.segundos}}</div>
+                    </ion-col>
+                    <ion-label>Horas</ion-label>
+                 </ion-button>
+                </ion-row>
+              </ion-grid>
+      
+              <ion-item >
+              <ion-checkbox color="success" slot="start" checked></ion-checkbox>
+              <ion-label color="success">REVICION DEL SISTEMA DE FILTRADO (Punto 2)</ion-label>
+              </ion-item>
+      
+              <ion-grid >
+                <ion-row  >
+                  <ion-button size= "medium"  color="dark" expand="block" fill="solid"> <ion-label>Tiempo de trabajo: </ion-label>
+                    <ion-col > </ion-col>
+                     <ion-col >
+                       <div >0{{tiempo.minutos}}</div>
+                     </ion-col>
+                     <ion-label>:</ion-label>
+                     
+                    <ion-col >
+                       <div *ngIf="tiempo.segundos <10"> 0{{tiempo.segundos}}</div> 
+                       <div *ngIf="tiempo.segundos >=10">{{tiempo.segundos}}</div>
+                    </ion-col>
+                    <ion-label>Horas</ion-label>
+                 </ion-button>
+                </ion-row>
+              </ion-grid>
+      
+              <ion-item>
+              <ion-checkbox color="success"slot="start" checked></ion-checkbox>
+              <ion-label color="success">REVICION DE LAS PINZAS DE AJUSTE (Punto 3)</ion-label>
+              </ion-item>
+      
+              <ion-grid >
+                <ion-row  >
+                  <ion-button size= "medium"  color="dark" expand="block" fill="solid"> <ion-label>Tiempo de trabajo: </ion-label>
+                    <ion-col > </ion-col>
+                     <ion-col >
+                       <div >0{{tiempo.minutos}}</div>
+                     </ion-col>
+                     <ion-label>:</ion-label>
+                     
+                    <ion-col >
+                       <div *ngIf="tiempo.segundos <10"> 0{{tiempo.segundos}}</div> 
+                       <div *ngIf="tiempo.segundos >=10">{{tiempo.segundos}}</div>
+                    </ion-col>
+                    <ion-label>Horas</ion-label>
+                 </ion-button>
+                </ion-row>
+              </ion-grid>
+      
+              <ion-item>
+                <ion-checkbox slot="start" checked></ion-checkbox>
+                <ion-label>REVICION DEL PISTON DE CORTE (Punto 4)</ion-label>
+                </ion-item>
+      
+                <ion-grid >
+                  <ion-row  >
+                    <ion-button size= "medium"  color="dark" expand="block" fill="solid"> <ion-label>Tiempo de trabajo: </ion-label>
+                      <ion-col > </ion-col>
+                       <ion-col >
+                         <div >0{{tiempo.minutos}}</div>
+                       </ion-col>
+                       <ion-label>:</ion-label>
+                       
+                      <ion-col >
+                         <div *ngIf="tiempo.segundos <10"> 0{{tiempo.segundos}}</div> 
+                         <div *ngIf="tiempo.segundos >=10">{{tiempo.segundos}}</div>
+                      </ion-col>
+                      <ion-label>Horas</ion-label>
+                   </ion-button>
+                  </ion-row>
+                </ion-grid>
+              
+                <ion-item>
+                  <ion-checkbox  color="danger"slot="start" checked></ion-checkbox>
+                  <ion-label color="danger">REVICION DEL SISTEMA DE EMPUJE(Punto 5)</ion-label>
+                  </ion-item>
+      
+                  <ion-grid >
+                    <ion-row  >
+                      <ion-button size= "medium"  color="dark" expand="block" fill="solid"> <ion-label>Tiempo de trabajo: </ion-label>
+                        <ion-col > </ion-col>
+                         <ion-col >
+                           <div >0{{tiempo.minutos}}</div>
+                         </ion-col>
+                         <ion-label>:</ion-label>
+                         
+                        <ion-col >
+                           <div *ngIf="tiempo.segundos <10"> 0{{tiempo.segundos}}</div> 
+                           <div *ngIf="tiempo.segundos >=10">{{tiempo.segundos}}</div>
+                        </ion-col>
+                        <ion-label>Horas</ion-label>
+                     </ion-button>
+                    </ion-row>
+                  </ion-grid>
+                
+                <ion-item>
+                    <ion-checkbox color="danger" slot="start" checked></ion-checkbox>
+                    <ion-label color="danger">REVICION DEL SISTEMA DE GUARDAS (Punto 6)</ion-label>
+                </ion-item>
+      
+                <ion-grid >
+                  <ion-row  >
+                    <ion-button size= "medium"  color="dark" expand="block" fill="solid"> <ion-label>Tiempo de trabajo: </ion-label>
+                      <ion-col > </ion-col>
+                       <ion-col >
+                         <div >0{{tiempo.minutos}}</div>
+                       </ion-col>
+                       <ion-label>:</ion-label>
+                       
+                      <ion-col >
+                         <div *ngIf="tiempo.segundos <10"> 0{{tiempo.segundos}}</div> 
+                         <div *ngIf="tiempo.segundos >=10">{{tiempo.segundos}}</div>
+                      </ion-col>
+                      <ion-label>Horas</ion-label>
+                   </ion-button>
+                  </ion-row>
+                </ion-grid>
+      
+              
+      
+      
+            </ion-col>
+          </ion-row>
+      </ion-grid> 
+      
+      
+</ion-content>
+

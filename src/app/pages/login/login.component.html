@@ -1,0 +1,50 @@
+
+<ion-content>
+
+  <ion-button shape="round" fill="outline"  [routerLink]="['/principal']" class="bt2" color="warning">
+    <ion-icon name="return-up-back-sharp" slot="start"> </ion-icon>
+  </ion-button>
+
+  <ion-grid >
+    <ion-row >
+       <ion-col sizeXs="12" sizeSm="10" sizeMd="8" sizeXl="4" class="logo4" >
+
+        <img   src="assets/img/logo-login.png">
+       </ion-col>
+     </ion-row>
+    </ion-grid>
+
+
+   
+ <ion-grid class="redes">
+      <ion-row  class="ion-justify-content-center">
+        <ion-col  sizeXs="12" sizeMd="8" sizeLg="4"> 
+          <ion-item>
+          <ion-label>Correo: </ion-label>
+          <ion-input type="string" [(ngModel)]="this.credenciales.correo"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row  class="ion-justify-content-center">
+        <ion-col  sizeXs="12" sizeMd="8" sizeLg="4">   
+          <ion-item>
+          <ion-label>Contraseña (6 numeros): </ion-label>
+          <ion-input type="password" minlength="6" [(ngModel)]="this.credenciales.password"></ion-input>
+        </ion-item>
+       </ion-col>
+      </ion-row>
+</ion-grid>       
+
+
+<ion-grid>
+  <ion-row class="ion-justify-content-center" >
+    <ion-col  sizeXs="12" sizeMd="8" sizeLg="4" class="redes" class="ion-text-center">
+
+      <ion-button  size= "medium" (click)="login()" color="light" shape="round" fill="outline" > ENTRAR </ion-button>
+    
+  </ion-col>
+</ion-row>
+</ion-grid>
+
+
+</ion-content>

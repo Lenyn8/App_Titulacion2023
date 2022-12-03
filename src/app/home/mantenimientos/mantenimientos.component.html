@@ -1,0 +1,53 @@
+
+<ion-content>
+  <ion-button shape="round" fill="outline"  [routerLink]="['/opciones']" class="bt2" color="warning">
+    <ion-icon name="return-up-back-sharp" slot="start"> </ion-icon>
+  </ion-button>
+
+
+  <ion-content >
+    <ion-datetime minuteValues="0,1,2,3,4,5,6,7,8,9,10,15,30,45" class="tiempo"></ion-datetime>
+<div>
+
+<ion-button class="lub" size="default" expand="block" color="dark"
+[routerLink]="['/lubricacion']"   >
+PUNTOS DE LUBRICACION 
+<ion-icon name="color-fill-outline" slot = "start"></ion-icon>
+</ion-button>
+
+<ion-button class="lub" size="default" expand="block" color="dark"  [routerLink]="['/electronico']"  >
+ MANTENIMIENTO ELECTRONICO
+ <ion-icon name="flash-outline" slot = "start" ></ion-icon>
+</ion-button>
+
+<ion-button class="lub" size="default" expand="block" color="dark"
+[routerLink]="['/neumatico']"   >
+MANTENIMIENTO NEUMATICO
+<ion-icon name="funnel-outline" slot = "start" ></ion-icon>
+</ion-button>
+
+
+<ion-button class="lub" size="default" expand="block" color="dark"
+[routerLink]="['/hidraulico']"   >
+MANTENIMIENTO HIDRAULICO
+  <ion-icon name="key-outline" slot="start"></ion-icon>
+</ion-button>
+
+
+<ion-button class="lub" size="default" expand="block" color="dark"
+[routerLink]="['/mecanico']"   >
+MANTENIMIENTO MECANICO
+<ion-icon name="construct-outline" slot="start" ></ion-icon>
+</ion-button>
+
+<ion-button class="lub" size="default" expand="block" color="dark"
+[routerLink]="['/software']"   >
+MANTENIMIENTO SOFTWARE
+<ion-icon name="construct-outline" slot="start" ></ion-icon>
+</ion-button>
+
+
+</div>
+
+
+</ion-content>
